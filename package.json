@@ -1,0 +1,24 @@
+{
+  "name": "DataStructure-Algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TJCourey/DataStructure-Algorithms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TJCourey/DataStructure-Algorithms/issues"
+  },
+  "homepage": "https://github.com/TJCourey/DataStructure-Algorithms#readme",
+  "dependencies": {
+    "jest": "^27.0.6"
+  }
+}
