@@ -9,38 +9,64 @@ function romanToInt(string){
     let numerals = []
     let solution
     const error = "Error"
-
+    string.toString
     string.toUpperCase
-    numerals.from(string)
+    numerals = Array.from(string)
 
     for (let i = 0; i < numerals.length; i++) {
-        const element = array[i];
+        const element = numerals[i];
+        if (element !== numerals[i++]) {
+            let operator = numerals[i++]
+            switch (element, operator) {
+                case (element == "I" && operator == "V"):
+                    solution+=4
+                    break;
+                case element == "I" && operator == "X":
+                    solution += 9
+                    break;
+                case element == "X" && operator == "L":
+                    solution += 40
+                    break;
+                case element == "X" && operator == "C":
+                    solution += 90
+                    break;
+                case element == "C" && operator == "D":
+                    solution += 400
+                    break;
+                case element == "C" && operator == "M":
+                    solution += 900
+                    break;
+         
+                default:
+                    break;
+            }
+        }
         switch (element) {
-            case I:
+            case "I":
                 solution+=1
                 break;
         
-            case V:
+            case "V":
                 solution+=5
                 break;
         
-            case X:
+            case "X":
                 solution+=10
                 break;
         
-            case L:
+            case "L":
                 solution+=50
                 break;
         
-            case C:
+            case "C":
                 solution+=100
                 break;
         
-            case D:
+            case "D":
                 solution+=500
                 break;
                
-            case M:
+            case "M":
                 solution+=1000
                 break;
                
@@ -48,5 +74,7 @@ function romanToInt(string){
                 break;
         }
     }
+    console.log(solution)
+    return solution
 }
 module.exports = romanToInt;
