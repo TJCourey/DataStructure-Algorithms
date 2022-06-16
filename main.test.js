@@ -1,23 +1,21 @@
 const func = require("./main");
 
-test("5.05", () => {
-  expect(func("5.05")).toStrictEqual([5, 5]);
+test("x", () => {
+  expect(func("x")).toStrictEqual(10);
 });
-test("100.86", () => {
-  expect(func("100.86")).toStrictEqual([100, 86]);
+test("XVI", () => {
+  expect(func("XVI")).toStrictEqual(16);
 });
-test("1,000.25", () => {
-  expect(func("1,000.25")).toStrictEqual([1000, 25]);
+test("XXVII", () => {
+  expect(func("XXVII")).toStrictEqual(27);
 });
-test("1,000,000.25", () => {
-  expect(func("1,000,000.25")).toStrictEqual([1000000, 25]);
+test("IX", () => {
+  expect(func("IX")).toStrictEqual(9);
 });
-test("0.25", () => {
-  expect(func("0.25")).toStrictEqual([0, 25]);
+test("XIX", () => {
+  expect(func("XIX")).toStrictEqual(19);
 });
 test("5", () => {
-  expect(func("5")).toStrictEqual([5, 0]);
+  expect(func("5")).toStrictEqual("error");
 });
-test("1dollar.11cents", () => {
-  expect(func("1dollar.11cents")).toStrictEqual([0, 0]);
-});
+

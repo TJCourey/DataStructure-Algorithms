@@ -18,7 +18,7 @@
     "url": "https://github.com/TJCourey/DataStructure-Algorithms/issues"
   },
   "homepage": "https://github.com/TJCourey/DataStructure-Algorithms#readme",
-  "dependencies": {
-    "jest": "^27.0.6"
+  "devDependencies": {
+    "jest": "^28.1.1"
   }
 }
