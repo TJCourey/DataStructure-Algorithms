@@ -7,7 +7,7 @@
 
 function romanToInt(string){
     let numerals = []
-    let solution
+    let solution = 0
     const error = "Error"
     string.toString
     string.toUpperCase
@@ -71,6 +71,7 @@ function romanToInt(string){
                 break;
                
             default:
+                solution
                 break;
         }
     }
